@@ -1,1 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>NZMCA AI Sandbox – Login</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/auth.js"></script>
+</head>
+<body style="display:flex;justify-content:center;align-items:center;">
+  <iframe class="bg-site" src="https://www.nzmca.org.nz"></iframe>
+
+  <div style="background:#ffffffee;padding:2rem 3rem;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,.12);">
+    <div class="header-logos" style="justify-content:center;margin-bottom:1.5rem;">
+      <img src="assets/img/willbot-logo.png" alt="Willbot logo">
+      <img src="assets/img/nzmca-logo.png" alt="NZMCA logo">
+    </div>
+    <h2 style="margin-bottom:1rem;">Enter password</h2>
+    <input id="pw" type="password" placeholder="Password">
+    <button style="margin-top:1rem;width:100%;" onclick="loginAttempt(document.getElementById('pw').value)">Unlock</button>
+  </div>
+</body>
+</html>
 
