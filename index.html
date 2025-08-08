@@ -1,1 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>NZMCA GPT – AI Sandbox</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/auth.js"></script>
+</head>
+<body onload="requireAuth()">
+  <!-- Background -->
+  <iframe class="bg-site" src="https://www.nzmca.org.nz"></iframe>
+
+  <!-- Sidebar -->
+  <section class="sidebar">
+    <div class="header-logos">
+      <img src="assets/img/willbot-logo.png" alt="Willbot" />
+      <img src="assets/img/nzmca-logo.png" alt="NZMCA" />
+    </div>
+    <a class="active" href="index.html">NZMCA GPT (Full-page)</a>
+    <a href="member.html">Member Chatbot</a>
+    <a href="public.html">Public Chatbot</a>
+    <div style="margin-top:auto;">
+      <button onclick="logout()">Log out</button>
+    </div>
+  </section>
+
+  <!-- Main content -->
+  <main class="main">
+    <!-- VectorShift embed (fixed bottom-right like you asked) -->
+    <iframe src="https://app.vectorshift.ai/chatbots/embedded/68534e96158cc818cb153d71?openChatbot=true"
+            width="500" height="600"
+            style="border:none;position:fixed;bottom:10px;right:10px;"></iframe>
+  </main>
+</body>
+</html>
 
