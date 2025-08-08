@@ -1,1 +1,39 @@
+/* Reset & layout helpers */
+* { box-sizing:border-box; margin:0; padding:0; }
+body,html { height:100%; font-family:system-ui, sans-serif; }
+
+/* Background – NZMCA site fills screen but clicks pass through */
+.bg-site {
+  position:fixed; inset:0;
+  border:none; width:100%; height:100%;
+  pointer-events:none;    /* allows your widgets to be clickable */
+  z-index:-1;
+}
+
+/* Sidebar */
+.sidebar {
+  position:fixed; top:0; left:0; height:100%; width:240px;
+  background:#fff; border-right:1px solid #eee;
+  display:flex; flex-direction:column; gap:1rem; padding:1.5rem 1rem;
+}
+.sidebar a {
+  text-decoration:none; color:#333; padding:.5rem 1rem;
+  border-radius:8px; transition:.2s;
+}
+.sidebar a:hover, .sidebar a.active { background:#ef3e42; color:#fff; }
+
+/* Header (logos) */
+.header-logos { display:flex; gap:.75rem; align-items:center; }
+.header-logos img { height:36px; }
+
+/* Main content container so widgets don’t sit under sidebar */
+.main { margin-left:260px; padding:1.5rem; }
+
+/* Position for corner widgets */
+.corner-widget { position:fixed; bottom:10px; right:10px; }
+
+/* Basic button for login */
+button { padding:.6rem 1.2rem; border:none; border-radius:6px; background:#ef3e42;
+  color:#fff; font-weight:600; cursor:pointer; }
+input { padding:.6rem .8rem; border:1px solid #ccc; border-radius:6px; width:100%; }
 
