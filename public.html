@@ -1,1 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Public Chatbot – AI Sandbox</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/auth.js"></script>
+
+  <script async id="vectorshift-chat-widget"
+          src="https://app.vectorshift.ai/chatWidget.js"
+          chatbot-id="687dcb34c683673f2560aa95"
+          chatbot-height="600px"
+          chatbot-width="400px"></script>
+</head>
+<body onload="requireAuth()">
+  <iframe class="bg-site" src="https://www.nzmca.org.nz"></iframe>
+  <section class="sidebar">
+    <div class="header-logos">
+      <img src="assets/img/willbot-logo.png" alt="Willbot" />
+      <img src="assets/img/nzmca-logo.png" alt="NZMCA" />
+    </div>
+    <a href="index.html">NZMCA GPT (Full-page)</a>
+    <a href="member.html">Member Chatbot</a>
+    <a class="active" href="public.html">Public Chatbot</a>
+    <div style="margin-top:auto;">
+      <button onclick="logout()">Log out</button>
+    </div>
+  </section>
+  <main class="main"></main>
+</body>
+</html>
 
