@@ -5,9 +5,14 @@
   <title>Public Chatbot – AI Sandbox</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <script defer src="assets/js/auth.js"></script>
-
-<script async id="vectorshift-chat-widget" src="https://app.vectorshift.ai/chatWidget.js" chatbot-id="68b51e131a01c97128fd531d" chatbot-height="600px" chatbot-width="400px" />
-
+  <!-- VectorShift widget script loads async -->
+  <script
+    async
+    id="vectorshift-chat-widget"
+    src="https://app.vectorshift.ai/chatWidget.js"
+    chatbot-id="68b51e131a01c97128fd531d"
+    chatbot-height="600px"
+    chatbot-width="400px"></script>
 </head>
 <body onload="requireAuth()">
   <iframe class="bg-site" src="https://www.nzmca.org.nz"></iframe>
@@ -23,7 +28,8 @@
       <button onclick="logout()">Log out</button>
     </div>
   </section>
-  <main class="main"></main>
+  <main class="main">
+    <!-- empty: widget appears bottom-right automatically -->
+  </main>
 </body>
 </html>
-
